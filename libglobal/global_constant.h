@@ -2,7 +2,7 @@
  * global_constant
  * Copyright 2017 - ~, Apin <apin.klas@gmail.com>
  *
- * This file is part of Sultan.
+ * This file is part of JayaSentosa.
  *
  * This program is free software; you can redistribute it and/or modify it
  * under the terms of the GNU General Public License as published by the Free
@@ -30,8 +30,8 @@ const int ITEMS_PER_LOAD = 50;
 
 namespace CONSTANT {
 const QString APP_NAME = QStringLiteral("Jayasentosa");
-const QString WINDOW_TITLE = QStringLiteral("%1 - Jayasentosa");
-const QString ABOUT_APP_NAME = QStringLiteral("Sultan %1");
+const QString WINDOW_TITLE = QStringLiteral("%1 - jayasentosa");
+const QString ABOUT_APP_NAME = QStringLiteral("jayasentosa %1");
 const QString URL_UPDATE = QStringLiteral("https://sultanupdate.lekapin.com/check?arc=%1&qt=%2");
 const QString URL_DOWNLOAD = QStringLiteral("https://sultanupdate.lekapin.com/assets/upload/sultan_%1_%2_%3");
 const QString BARCODE_CLOUD = QStringLiteral("https://barcode.indoarm.com/?barcode=%1");

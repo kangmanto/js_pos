@@ -1,0 +1,13 @@
+INPUT(
+./release\preference.o
+./release\message.o
+./release\futurewatcher.o
+./release\messagehandler.o
+./release\messagebus.o
+./release\usersession.o
+./release\permissionhelper.o
+./release\util.o
+./release\abstractsultangui.o
+./release\moc_futurewatcher.o
+./release\moc_messagebus.o
+);

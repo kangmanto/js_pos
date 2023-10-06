@@ -1,0 +1,16 @@
+INPUT(
+./debug\main.o
+./debug\core.o
+./debug\httpserver.o
+./debug\socketmanager.o
+./debug\socketclient.o
+./debug\sockethandler.o
+./debug\qrc_sultan.o
+./debug\qrc_sqlmigration.o
+./debug\qrc_translation.o
+./debug\moc_core.o
+./debug\moc_httpserver.o
+./debug\moc_socketmanager.o
+./debug\moc_socketclient.o
+./debug\moc_sockethandler.o
+);

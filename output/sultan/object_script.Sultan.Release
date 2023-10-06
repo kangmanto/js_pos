@@ -1,0 +1,16 @@
+INPUT(
+./release\main.o
+./release\core.o
+./release\httpserver.o
+./release\socketmanager.o
+./release\socketclient.o
+./release\sockethandler.o
+./release\qrc_sultan.o
+./release\qrc_sqlmigration.o
+./release\qrc_translation.o
+./release\moc_core.o
+./release\moc_httpserver.o
+./release\moc_socketmanager.o
+./release\moc_socketclient.o
+./release\moc_sockethandler.o
+);

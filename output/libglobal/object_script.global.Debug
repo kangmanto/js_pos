@@ -1,0 +1,13 @@
+INPUT(
+./debug\preference.o
+./debug\message.o
+./debug\futurewatcher.o
+./debug\messagehandler.o
+./debug\messagebus.o
+./debug\usersession.o
+./debug\permissionhelper.o
+./debug\util.o
+./debug\abstractsultangui.o
+./debug\moc_futurewatcher.o
+./debug\moc_messagebus.o
+);
