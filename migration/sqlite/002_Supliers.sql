@@ -11,4 +11,4 @@ CREATE TABLE supliers (
 -- separator
 CREATE UNIQUE INDEX SUPLIERNAME ON supliers (name);
 -- separator
-INSERT INTO supliers (name, code, address, phone) VALUES ('CV. Putra Pandu', 'PP', 'Selokarto', '085200660689');
+INSERT INTO supliers (name, code, address, phone) VALUES ('CV. Sultan Food', 'TF', 'Jogonalan Lor RT 2', '08123456789,085235419949');

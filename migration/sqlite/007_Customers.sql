@@ -62,14 +62,4 @@ CREATE INDEX CUSTOMER_REWARD_CUSTOMER_ID ON customerrewards (customer_id);
 -- separator
 CREATE INDEX CUSTOMER_CREDIT_CUSTOMER_ID ON customercredits (customer_id);
 -- separator
-INSERT INTO customers (number, name) VALUES 
-('2001', 'Balaidesa Pecalungan'),
-('2002', 'Balaidesa Bandung'),
-('2003', 'Balaidesa Gombong'),
-('2004', 'Balaidesa Randu'),
-('2005', 'Balaidesa Pretek'),
-('2006', 'Balaidesa Siguci'),
-('2007', 'Balaidesa Selokarto'),
-('2008', 'Balaidesa Gemuh'),
-('2009', 'Balaidesa Gumawang'),
-('2010', 'Balaidesa Keniten');
+INSERT INTO customers (number, name) VALUES ('123', 'Johan');

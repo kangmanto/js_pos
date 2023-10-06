@@ -15,4 +15,4 @@ CREATE UNIQUE INDEX USERNAME ON users (username);
 -- separator
 INSERT INTO users (username, password, name, address, permission) 
 VALUES 
-('santoso', '9af82031d374b97c9e73132a413cbdf5', 'Santoso', 'Wadas Timur', '9876');
+('sultan', '9af82031d374b97c9e73132a413cbdf5', 'Sultan', 'Jogonalan Lor RT 2 Kasihan Bantul Yogyakarta', '9876');
