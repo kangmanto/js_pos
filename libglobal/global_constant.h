@@ -29,8 +29,8 @@ const int ITEMS_PER_LOAD = 50;
 }
 
 namespace CONSTANT {
-const QString APP_NAME = QStringLiteral("Sultan");
-const QString WINDOW_TITLE = QStringLiteral("%1 - Sultan");
+const QString APP_NAME = QStringLiteral("Jayasentosa");
+const QString WINDOW_TITLE = QStringLiteral("%1 - Jayasentosa");
 const QString ABOUT_APP_NAME = QStringLiteral("Sultan %1");
 const QString URL_UPDATE = QStringLiteral("https://sultanupdate.lekapin.com/check?arc=%1&qt=%2");
 const QString URL_DOWNLOAD = QStringLiteral("https://sultanupdate.lekapin.com/assets/upload/sultan_%1_%2_%3");
