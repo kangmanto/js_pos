@@ -16,12 +16,14 @@ CREATE TABLE categorychilds (
 );
 -- separator
 INSERT INTO categories(name, code, hierarchy) 
-VALUES ('Food', 'FD', 'Food');
+VALUES 
+('BARANG', 'OBJT', 'BARANG'),
+('JASA', 'SERV', 'JASA');
 -- separator
 INSERT INTO categories(parent_id, name, code, hierarchy)
 VALUES
-(1, 'Snack', 'SN', 'Food - Snack'),
-(1, 'Drink', 'DN', 'Food - Drink');
+(1, 'KERTAS', 'KT', 'BARANG - KERTAS'),
+(2, 'JILID', 'JL', 'JASA - JILID');
 -- separator
 INSERT INTO categorychilds (category_id, child_id)
 VALUES (1, 1), (1, 2), (1, 3), (2, 2), (3, 3);

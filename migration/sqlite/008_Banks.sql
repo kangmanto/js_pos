@@ -10,4 +10,4 @@ CREATE TABLE banks (
 -- separator
 INSERT INTO banks (name, credit_charge_formula)
 VALUES
-('BCA', '2.5%');
+('BBRICA', '2.5%');
