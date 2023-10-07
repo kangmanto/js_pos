@@ -125,7 +125,7 @@ QString DatabaseAction::exportData() {
     stream << version << "\n";
     for (int i = 0; i < tableList.size(); i++) {
         int offset = 0;
-        int limit = 500;
+        int limit = 8000;
         stream << "TABLE|" << tableList[i] << "|";
         DbResult res = mDb->start(offset)->limit(limit)->get(tableList[i]);
         if (res.isEmpty())

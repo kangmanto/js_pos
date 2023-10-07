@@ -122,9 +122,9 @@ CashierWidget::CashierWidget(LibG::MessageBus *bus, QWidget *parent)
     new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_Up), this, SLOT(focusTable()));
     new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_Down), this, SLOT(focusBarcode()));
     new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_Plus), this, SLOT(addNewItemNoBarcode()));
-    ui->labelTitle->setText(Preference::getString(SETTING::MARKET_NAME, "Sultan Minimarket"));
+    ui->labelTitle->setText(Preference::getString(SETTING::MARKET_NAME, "JS ATK"));
     ui->labelSubtitle->setText(
-        GuiUtil::toHtml(Preference::getString(SETTING::MARKET_SUBNAME, "Jln. Bantul\nYogyakarta")));
+        GuiUtil::toHtml(Preference::getString(SETTING::MARKET_SUBNAME, "Jl. Wadas\nSelokarto")));
     connect(mAddItemDialog, SIGNAL(addNewItem(QVariantMap)), SLOT(addNewItem(QVariantMap)));
     auto inlineEdit = Preference::getBool(SETTING::INLINE_EDIT_QTY);
     if (inlineEdit) {
@@ -465,8 +465,8 @@ void CashierWidget::printBill(const QVariantMap &data) {
         return;
     }
     int paymentType = data["payment_type"].toInt();
-    const QString &title = Preference::getString(SETTING::PRINTER_CASHIER_TITLE, "Sultan Minimarket");
-    const QString &subtitle = Preference::getString(SETTING::PRINTER_CASHIER_SUBTITLE, "Jogonalan Lor RT 2 Bantul");
+    const QString &title = Preference::getString(SETTING::PRINTER_CASHIER_TITLE, "JS ATK");
+    const QString &subtitle = Preference::getString(SETTING::PRINTER_CASHIER_SUBTITLE, "Jl. Wadas -Selokarto");
     const QString &footer = Preference::getString(SETTING::PRINTER_CASHIER_FOOTER, "Barang dibeli tidak dapat ditukar");
     bool useBarcode = Preference::getBool(SETTING::PRINTER_CASHIER_SHOW_BARCODE);
     int barcodelen = Preference::getInt(SETTING::PRINTER_CASHIER_BARCODE_LEN, 15);

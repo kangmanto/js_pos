@@ -73,7 +73,7 @@ SettingWidget::SettingWidget(MessageBus *bus, QWidget *parent) : QWidget(parent)
 SettingWidget::~SettingWidget() { delete ui; }
 
 void SettingWidget::setupAppliaction() {
-    ui->lineAppName->setText(Preference::getString(SETTING::MARKET_NAME, "Sultan Minimarket"));
+    ui->lineAppName->setText(Preference::getString(SETTING::MARKET_NAME, "JS ATK"));
     ui->plainSubName->setPlainText(Preference::getString(SETTING::MARKET_SUBNAME, "Jl. Bantul\nYogyakarta"));
 
     ui->groupBoxTax->setChecked(Preference::getBool(SETTING::USE_TAX));
@@ -144,7 +144,7 @@ void SettingWidget::setupPrinter() {
     GuiUtil::selectCombo(ui->comboPrintCashierType, Preference::getInt(SETTING::PRINTER_CASHIER_TYPE));
     ui->comboPrintCashier->setCurrentText(Preference::getString(SETTING::PRINTER_CASHIER_NAME));
     ui->linePrintCashierDevice->setText(Preference::getString(SETTING::PRINTER_CASHIER_DEVICE));
-    ui->linePrintCashierTitle->setText(Preference::getString(SETTING::PRINTER_CASHIER_TITLE, "Sultan Minimarket"));
+    ui->linePrintCashierTitle->setText(Preference::getString(SETTING::PRINTER_CASHIER_TITLE, "JS ATK"));
     ui->plainPrintCashierSubtitle->setPlainText(
         Preference::getString(SETTING::PRINTER_CASHIER_SUBTITLE, "Jogonalan Lor RT 2 Bantul"));
     ui->plainPrintCashierFooter->setPlainText(
@@ -226,7 +226,7 @@ void SettingWidget::setupCustomerDisplay() {
     if (selected >= 0)
         ui->comboCustomerDisplay->setCurrentIndex(selected);
     ui->lineWelcome1->setText(Preference::getString(SETTING::CUSDISPLAY_WELCOME1, tr("Welcome")));
-    ui->lineWelcome2->setText(Preference::getString(SETTING::CUSDISPLAY_WELCOME2, tr("to Sultan POS")));
+    ui->lineWelcome2->setText(Preference::getString(SETTING::CUSDISPLAY_WELCOME2, tr("to Jaya Sentosa POS")));
 }
 
 void SettingWidget::signChanged() { ui->lineSign->setEnabled(ui->checkSign->isChecked()); }

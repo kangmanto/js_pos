@@ -71,7 +71,7 @@ void Printer::print(const QString &printName, const QString &data, int type, uin
 
     DOC_INFO_1 docInfo;
     wchar_t docName[16], dataType[8];
-    wcscpy_s(docName, 100, L"Sultan Document");
+    wcscpy_s(docName, 100, L"Jayasentosa Document");
     wcscpy_s(dataType, 100, L"RAW");
     docInfo.pOutputFile = NULL;
     docInfo.pDocName = docName;
@@ -106,9 +106,9 @@ void Printer::print(const QString &printName, const QString &data, int type, uin
     } else if (type == PRINT_TYPE::SPOOL) {
 #ifndef NO_PRINTER_SPOOL
         int jobId = 0;
-        jobId = cupsCreateJob(CUPS_HTTP_DEFAULT, printName.toStdString().c_str(), "Sultan print", 0, NULL);
+        jobId = cupsCreateJob(CUPS_HTTP_DEFAULT, printName.toStdString().c_str(), "Jayasentosa print", 0, NULL);
         if (jobId > 0) {
-            cupsStartDocument(CUPS_HTTP_DEFAULT, printName.toStdString().c_str(), jobId, "Sultan Document",
+            cupsStartDocument(CUPS_HTTP_DEFAULT, printName.toStdString().c_str(), jobId, "Jayasentosa Document",
                               CUPS_FORMAT_RAW, true);
             cupsWriteRequestData(CUPS_HTTP_DEFAULT, data.toStdString().c_str(), data.length());
             cupsFinishDocument(CUPS_HTTP_DEFAULT, printName.toStdString().c_str());

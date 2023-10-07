@@ -100,7 +100,7 @@
           <string notr="true">font-size: 30px;</string>
          </property>
          <property name="text">
-          <string>Sultan Market</string>
+          <string>JS ATK</string>
          </property>
         </widget>
        </item>
@@ -113,7 +113,7 @@
           </sizepolicy>
          </property>
          <property name="text">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Jogonalan Lor RT 2 Kasihan Bantul&lt;br/&gt;Yogyakarta&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Jl. Wadas - Selokarto&lt;br/&gt;Pecalungan&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
          <property name="textFormat">
           <enum>Qt::RichText</enum>

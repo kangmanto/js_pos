@@ -42,7 +42,7 @@ LoginDialog::LoginDialog(MessageBus *bus, QWidget *parent) : QDialog(parent), ui
     setWindowTitle(CONSTANT::WINDOW_TITLE.arg(tr("Login")));
     connect(ui->pushLogin, SIGNAL(clicked(bool)), SLOT(loginClicked()));
     connect(ui->pushConfig, SIGNAL(clicked(bool)), SLOT(openSetting()));
-    ui->labelVersion->setText(QString("Sultan version %1").arg(qApp->applicationVersion()));
+    ui->labelVersion->setText(QString("Jaya Sentosa version %1").arg(qApp->applicationVersion()));
 }
 
 LoginDialog::~LoginDialog() { delete ui; }
@@ -57,8 +57,8 @@ void LoginDialog::reset() {
 void LoginDialog::showDialog() {
     reset();
 #ifdef QT_DEBUG
-    ui->lineUsername->setText("sultan");
-    ui->linePassword->setText("sultan");
+    ui->lineUsername->setText("jaya-sentosa");
+    ui->linePassword->setText("jaya-sentosa");
 #endif
     show();
 }
